@@ -6,9 +6,13 @@ public class Calculator {
         int result=0;
 
         while(true){
+            System.out.println("Enter a operator: ");
             char operation=sc.next().trim().charAt(0);
+            System.out.println();
             if(operation=='+' || operation=='-'|| operation=='*'|| operation=='/'){
+                System.out.println("Enter the 1st Number: ");
                 int input1=sc.nextInt();
+                System.out.println("Enter the 2nd Number: ");
                 int input2=sc.nextInt();
 
                 if(operation=='+'){
@@ -29,6 +33,8 @@ public class Calculator {
             }else {
                 System.out.println("Not a Valid operation");
             }
+            System.out.println("The result is "+result);
         }
+
     }
 }
