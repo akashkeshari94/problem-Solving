@@ -4,8 +4,14 @@ public class Sum {
 
     public static void main(String[] args) {
         //sum();
-        int ans=sum2();
+        //int ans=sum2();
+        int ans=sum3(20,30);
         System.out.println(ans);
+    }
+
+    private static int sum3(int a , int b) {
+        int sum=a+b;
+        return sum;
     }
 
     private static void sum() {
