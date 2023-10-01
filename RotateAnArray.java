@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class RotateAnArray {
 
     public static void main(String[] args) {
-        int [] rotated = rotateKTimes(new int[]{10, 12, 13, 2, -2, 3, 6, 7, 8, 9, 0} , 5);
+        int [] rotated = rotateKTimes(new int[]{10, 12, 13, 2, -2, 3, 6, 7, 8, 9, 0} , 15);
         System.out.println(Arrays.toString(rotated));
     }
 
     private static int[] rotateKTimes(int[] input, int K){
-        K= K%input.length;
+        K= K%input.length;//Edge case If K is greater than size of Array, SO rataing it K%n is same as K times
         reverseTheArray(input, 0, input.length-1);
         //reverseTheArray(Arrays.copyOfRange(input,0,K-1),0,K-1);
         reverseTheArray(input,0,K-1);
